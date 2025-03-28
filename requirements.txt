@@ -1,4 +1,4 @@
 cryptography==44.0.2
 opencv-python==4.11.0.86
-python-dotenv==1.0.1
+python-dotenv==1.1.0
 requests==2.32.3
