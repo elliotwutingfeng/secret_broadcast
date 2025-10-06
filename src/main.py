@@ -19,6 +19,7 @@ import datetime
 import io
 import json
 import os
+import pathlib
 import time
 
 import cv2
@@ -27,7 +28,7 @@ from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives.kdf.scrypt import Scrypt
 from dotenv import load_dotenv
 
-load_dotenv(".env")
+load_dotenv(pathlib.Path(__file__).parent.parent / ".env")
 
 TOKEN = os.getenv("TOKEN")
 CHAT_IDS = tuple(os.getenv("CHAT_IDS").split(","))
